@@ -1,0 +1,1 @@
+# Exemplo utilizando o cookie
