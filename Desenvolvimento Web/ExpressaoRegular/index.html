@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressão Regular</title>
+    <script>
+        function stringSearch(op) {
+            var str = document.getElementById('exp').value;
+            if (op == 1) {
+                var regExp = /\d{2}[h]{1}\d{2}[m][i][n]/;
+            } else if (op == 2) {
+                var regExp = /\d{2}[:]\d{2}[h][s]/;
+            }else if(op == 3){                
+                var regExp = /\d{2}[h]\d{2}[m]\d{2}[s]/;
+            }else if(op == 4){                
+                var regExp = /\w{2}[:]\w{2}[:]{2}|[:]{2}\w{2}[:]\w{2}/;
+            }else if(op == 5){                
+                var regExp = /\w{2}[:]{3}\w{2}/;
+            }
+            alert(regExp.test(str));
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Questão 2</h1>
+    <h3>Informe apenas o horário com o formato "99h99min" ou "99:00hs" ou "99h99m99s" ou um segmento de endereço IPv6</h3>
+    <input type="text" id="exp" value="">
+    <br>
+    <button onclick="stringSearch(1)">Examinar formato "99h99min"</button>
+    <br>
+    <button onclick="stringSearch(2)">Examinar formato "99:00hs"</button>
+    <br>
+    <button onclick="stringSearch(3)">Examinar formato "99h99m99s"</button>
+    <br>
+    <button onclick="stringSearch(4)">Examinar formato "XX:XX::" ou "::XX:XX" </button>
+    <br>
+    <button onclick="stringSearch(5)">Examinar formato "XX:::XX"</button>
+
+</body>
+
+</html>
