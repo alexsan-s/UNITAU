@@ -1,6 +1,7 @@
 # UNITAU-PROGRAMACAO-WEB
  
-Questão 2. Considere criar um formulário para receber um dado e validar conforme abaixo. A validação pode ser feito em qualquer linguagem (PHP, Python, JS, Java etc).  
+**Questão 2;
+Considere criar um formulário para receber um dado e validar conforme abaixo. A validação pode ser feito em qualquer linguagem (PHP, Python, JS, Java etc).  
 
 Fonte: 
 
